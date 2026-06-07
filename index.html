@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexus Mobile</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:
+linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+url('background.jpg');
+url(homepage.jpg');
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+
+color:white;
+text-align:center;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+.container{
+max-width:500px;
+width:100%;
+}
+
+.logo{
+width:250px;
+margin-bottom:20px;
+filter:drop-shadow(0 0 15px #00aaff);
+}
+
+h1{
+font-size:55px;
+margin-bottom:10px;
+text-shadow:0 0 15px rgba(0,170,255,0.7);
+}
+
+.subtitle{
+color:#d0d0d0;
+margin-bottom:30px;
+font-size:20px;
+}
+
+.btn{
+display:block;
+width:100%;
+padding:18px;
+margin:12px 0;
+border-radius:15px;
+text-decoration:none;
+font-weight:bold;
+font-size:20px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.03);
+}
+
+.download{
+background:#007bff;
+color:white;
+}
+
+.discord{
+background:#5865F2;
+color:white;
+}
+
+.footer{
+margin-top:25px;
+color:#aaa;
+font-size:14px;
+}
+
+.menu-btn{
+position:fixed;
+top:15px;
+right:15px;
+background:#0a84ff;
+color:white;
+border:none;
+font-size:24px;
+padding:12px 18px;
+border-radius:15px;
+cursor:pointer;
+z-index:1000;
+box-shadow:0 0 15px rgba(0,123,255,.5);
+}
+
+.menu{
+display:none;
+position:fixed;
+top:75px;
+right:15px;
+background:#111;
+border-radius:15px;
+overflow:hidden;
+z-index:1000;
+min-width:200px;
+box-shadow:0 0 20px rgba(0,123,255,.3);
+}
+
+.menu a{
+display:block;
+padding:15px 20px;
+color:white;
+text-decoration:none;
+font-size:18px;
+}
+
+.menu a:hover{
+background:#222;
+}
+</style>
+</head>
+
+<body>
+
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+<div id="menu" class="menu">
+<a href="home.html">🏠 Home</a>
+<a href="#">📥 Download</a>
+<a href="https://discord.gg/6feq33Uqz">💬 Discord</a>
+</div>
+
+<div class="container">
+
+
+<h1>Nexus Mobile</h1>
+
+<p class="subtitle">
+Welcome To Nexus Mobile<br>
+Coming Soon
+</p>
+
+<a href="#" class="btn download">
+📥 APK Coming Soon
+</a>
+
+<a href="https://discord.gg/6feq33Uqz" class="btn discord">
+💬 Join Discord
+</a>
+
+<div class="footer">
+© 2026 Nexus Mobile
+</div>
+
+</div>
+
+<script>
+function toggleMenu(){
+var menu=document.getElementById("menu");
+menu.style.display=
+menu.style.display==="block"?"none":"block";
+}
+</script>
+
+</body>
+</html>
